@@ -15,21 +15,27 @@ body {
     position: absolute;
     margin: auto;
 
-    width: 350px;
+    width: 450px;
+    height: 45px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     
     border-radius: 10px;
     text-align: center;
-    font-size: .6em;
     background-color: white;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.292);
 }
 
 
-ul li{
+nav a{
+    position: relative;
     display: inline;
-    margin: 30px;
+    margin: 20px;
+    padding: 15px;
+    top: -20px;
+    
+    font-size: 1.2em;
     text-align: center;
     color: black;
 }
@@ -38,7 +44,11 @@ a {
     text-decoration: none;
 }
 
-li.material-symbols-outlined:hover {
+a#home:hover, a#perfil:hover, a#msg:hover, a#stgs:hover{
     transition: 1s;
-    transform: scaleY(10px);
+    transform: translateY(-22px);
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 6px rgb(48, 51, 51);
+    color: white;
+    background-color: rgb(52, 164, 196);
 }
