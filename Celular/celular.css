@@ -20,7 +20,7 @@ body {
     height: 500px;
     border-radius: 25px;
     border: 5px solid black;
-    box-shadow: 0 10px 30px 0px rgba(225, 245, 253, 0.323);
+    box-shadow: 0px 90px 50px -70px rgba(213, 247, 255, 0.674);
 }
 
 .camera {
@@ -37,5 +37,56 @@ body {
     z-index: -1;
     border-radius: inherit;
     background: rgb(34,165,195);
-    background: linear-gradient(0deg, rgba(34,165,195,1) 0%, rgba(117,238,43,1) 100%);
+    background: linear-gradient(40deg, rgb(34, 141, 195) 0%, rgb(79, 238, 43) 100%);
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.corte1 {
+    position: absolute;
+    transform: translateX(35px);
+    align-self: center;
+    width: 25px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(40deg, rgb(34, 141, 195) -60%, rgb(79, 238, 43) 160%);
+}
+
+.corte2 {
+    position: absolute;
+    transform: translateY(-10px);
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(40deg, rgb(34, 141, 195) -60%, rgb(79, 238, 43) 160%);
+}
+
+.corte3 {
+    position: absolute;
+    transform: translateY(60px);
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(40deg, rgb(34, 141, 195) -60%, rgb(79, 238, 43) 160%);
+}
+
+.folha {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(40deg);
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
 }
